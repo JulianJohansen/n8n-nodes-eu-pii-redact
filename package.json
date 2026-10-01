@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JulianJohansen/n8n-nodes-eu-pii-redact.git"
+    "url": "git+https://github.com/JulianJohansen/n8n-nodes-eu-pii-redact.git"
   },
   "scripts": {
     "build": "n8n-node build",
@@ -55,5 +55,8 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
