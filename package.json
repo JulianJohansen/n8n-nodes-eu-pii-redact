@@ -1,0 +1,57 @@
+{
+  "name": "n8n-nodes-eu-pii-redact",
+  "version": "0.1.0",
+  "description": "n8n node: redact European personal data (names, EU national IDs, IBANs, emails, phones) before it reaches an LLM, and restore it afterwards.",
+  "license": "MIT",
+  "homepage": "https://github.com/JulianJohansen/n8n-nodes-eu-pii-redact",
+  "keywords": [
+    "n8n-community-node-package",
+    "pii",
+    "redaction",
+    "gdpr",
+    "privacy",
+    "anonymization",
+    "llm"
+  ],
+  "author": {
+    "name": "JulianJohansen",
+    "email": "julvankran@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JulianJohansen/n8n-nodes-eu-pii-redact.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease",
+    "test": "npm run build && node --test test/node.test.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/EuPiiRedactionApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/EuPiiRedaction/EuPiiRedaction.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}

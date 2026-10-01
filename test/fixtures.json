@@ -1,0 +1,72 @@
+[
+ {
+  "request": {
+   "text": "Hi, my name is Karina Dahl. Refund to DK50 0040 0440 1162 43.\nKarina",
+   "mode": "label"
+  },
+  "response": {
+   "redacted": "Hi, my name is [PERSON_1]. Refund to [IBAN_1].\n[PERSON_1]",
+   "entities": [
+    {
+     "type": "PERSON",
+     "start": 15,
+     "end": 26,
+     "placeholder": "[PERSON_1]"
+    },
+    {
+     "type": "IBAN",
+     "start": 38,
+     "end": 60,
+     "placeholder": "[IBAN_1]"
+    },
+    {
+     "type": "PERSON",
+     "start": 62,
+     "end": 68,
+     "placeholder": "[PERSON_1]"
+    }
+   ]
+  }
+ },
+ {
+  "request": {
+   "text": "Karina Dahl <karina.dahl@example.com>",
+   "mode": "mask",
+   "types": [
+    "EMAIL"
+   ]
+  },
+  "response": {
+   "redacted": "Karina Dahl <***********************>",
+   "entities": [
+    {
+     "type": "EMAIL",
+     "start": 13,
+     "end": 36
+    }
+   ]
+  }
+ },
+ {
+  "request": {
+   "text": "PESEL: 44051401359, mail jan@example.nl",
+   "mode": "label",
+   "types": [
+    "NATIONAL_ID"
+   ]
+  },
+  "response": {
+   "redacted": "PESEL: [NATIONAL_ID_1], mail jan@example.nl",
+   "entities": [
+    {
+     "type": "NATIONAL_ID",
+     "start": 7,
+     "end": 18,
+     "country": "PL",
+     "scheme": "PESEL",
+     "placeholder": "[NATIONAL_ID_1]"
+    }
+   ]
+  }
+ }
+]

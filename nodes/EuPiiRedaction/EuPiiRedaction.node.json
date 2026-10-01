@@ -1,0 +1,14 @@
+{
+	"node": "n8n-nodes-eu-pii-redact.euPiiRedaction",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Data & Storage", "Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{ "url": "https://github.com/JulianJohansen/n8n-nodes-eu-pii-redact#credentials" }
+		],
+		"primaryDocumentation": [
+			{ "url": "https://github.com/JulianJohansen/n8n-nodes-eu-pii-redact#readme" }
+		]
+	}
+}
