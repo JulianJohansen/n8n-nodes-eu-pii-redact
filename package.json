@@ -32,7 +32,9 @@
     "test": "npm run build && node --test test/node.test.cjs"
   },
   "files": [
-    "dist"
+    "dist",
+    "!dist/tsconfig.tsbuildinfo",
+    "!dist/**/*.map"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
