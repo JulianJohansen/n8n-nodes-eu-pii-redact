@@ -5,6 +5,7 @@ it replaces names, EU national ID numbers, IBANs, emails, phones and more with p
 like `[PERSON_1]` before text reaches an LLM, and puts the real values back afterwards.
 
 Powered by the [EU PII Redaction API](https://rapidapi.com/JulianJohansen/api/eu-pii-redaction).
+[Try it live without signing up](https://eu-id-check.julvankran.workers.dev/try).
 
 ## Installation
 
